@@ -276,15 +276,25 @@ int main()
     
     //6.    remove
     cout << "Remove\t\t\t";
-    
     remove(a.begin(), a.end(), a[1]);
-    
     for_each(a.begin(), a.end(), show<int>);
     
     cout << endl; // space before next e.g
     
-    
     //7.    search
+    cout << "Search\t\t\t";
+    vector<int> sequence{88, 72, 94};
+    vector<int>::iterator itr;
+    itr = search(a.begin(), a.end(), a.begin()+4, a.begin()+7);
+
+    if (itr != a.end()) {
+        cout << " \"88, 72, 94\" found at pos " << itr-a.begin();
+    } else {
+        cout << " \"88, 72, 94\" not found!";
+    }
+    
+    cout << endl; // space before next e.g
+    
     //8.    swap
     //9.    swap range
     //10.    count
