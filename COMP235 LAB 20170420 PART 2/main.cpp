@@ -335,14 +335,20 @@ int main()
     cout << endl; // space before next e.g
     
     //13.    equal
+    cout << "Equal\t\t\t";
+    
+    int myints[] = {94, 99, 97};
+    
+    cout << " Range is equal: "  << boolalpha << equal(a.begin()+2, a.begin()+4, myints);
+    
+    cout << endl; // space before next e.g
+    
     //14.    for_each
     //15.    find_if
     //16.    binary_search
     //17.    merge
     //18.    copy
     //19.    lexicographic_compare
-    
-    
     
     return 0;
 }
