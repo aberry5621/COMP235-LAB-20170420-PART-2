@@ -322,7 +322,18 @@ int main()
     cout << endl; // space before next e.g
     
     //11.    minimum
+    cout << "Minimum\t\t\t";
+    cout << " Min of a[2] and a[3]: " << min(a[2], a[3]);
+
+    cout << endl; // space before next e.g
+    
+    
     //12.    maximum
+    cout << "Maximum\t\t\t";
+    cout << " Max of a[2] and a[3]: " << max(a[2], a[3]);
+    
+    cout << endl; // space before next e.g
+    
     //13.    equal
     //14.    for_each
     //15.    find_if
