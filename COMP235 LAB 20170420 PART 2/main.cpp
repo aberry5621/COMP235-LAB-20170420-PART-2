@@ -269,12 +269,21 @@ int main()
     
     //5.    fill
     cout << "Fill\t\t\t";
-    fill(a.begin()+1, a.begin()+9, 99);
+    fill(a.begin()+3, a.begin()+7, 99);
     for_each(a.begin(), a.end(), show<int>);
     
     cout << endl; // space before next e.g
     
     //6.    remove
+    cout << "Remove\t\t\t";
+    
+    remove(a.begin(), a.end(), a[1]);
+    
+    for_each(a.begin(), a.end(), show<int>);
+    
+    cout << endl; // space before next e.g
+    
+    
     //7.    search
     //8.    swap
     //9.    swap range
