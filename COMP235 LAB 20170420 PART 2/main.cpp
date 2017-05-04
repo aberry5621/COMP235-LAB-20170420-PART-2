@@ -269,7 +269,7 @@ int main()
     
     //5.    fill
     cout << "Fill\t\t\t";
-    fill(a.begin()+3, a.begin()+7, 99);
+    fill(a.begin()+3, a.begin()+5, 99);
     for_each(a.begin(), a.end(), show<int>);
     
     cout << endl; // space before next e.g
@@ -315,6 +315,12 @@ int main()
     cout << endl; // space before next e.g
     
     //10.    count
+    cout << "Count\t\t\t";
+    
+    cout <<  " 85 count is: " << count(a.begin(), a.end(), 85);
+    
+    cout << endl; // space before next e.g
+    
     //11.    minimum
     //12.    maximum
     //13.    equal
