@@ -344,6 +344,18 @@ int main()
     cout << endl; // space before next e.g
     
     //14.    for_each
+    cout << "For Each\t\t";
+    
+    vector<int>::iterator itr8r = a.begin();
+    for_each(a.begin(), a.end(), [&](int i) {
+        *itr8r = *itr8r - 3;
+        *itr8r++;
+    });
+    
+    for_each(a.begin(), a.end(), show<int>);
+    
+    cout << endl; // space before next e.g
+    
     //15.    find_if
     //16.    binary_search
     //17.    merge
