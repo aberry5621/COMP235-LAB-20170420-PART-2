@@ -296,7 +296,24 @@ int main()
     cout << endl; // space before next e.g
     
     //8.    swap
+    cout << "Swap\t\t\t";
+    int swap_flag = 0;
+    for (int i = 0; i < 10; i++) {
+        swap(a[swap_flag], a[swap_flag + 1]);
+        swap_flag += 2;
+    }
+    for_each(a.begin(), a.end(), show<int>);
+    
+    cout << endl; // space before next e.g
+    
     //9.    swap range
+    cout << "Swap Ranges\t\t";
+    
+    swap_ranges(a.begin(), a.begin()+3, a.begin()+6);
+    for_each(a.begin(), a.end(), show<int>);
+    
+    cout << endl; // space before next e.g
+    
     //10.    count
     //11.    minimum
     //12.    maximum
