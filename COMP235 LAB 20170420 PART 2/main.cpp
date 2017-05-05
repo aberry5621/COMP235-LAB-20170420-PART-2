@@ -362,13 +362,15 @@ int main()
     vector<int>::iterator itr15 = find_if(a.begin(), a.end(), [&](int& i) -> bool { return (i % 2 == 0);});
     cout << " First even value found: " << *itr15;
     
-    
     cout << endl; // space before next e.g
     
     //16.    binary_search
-    cout << "Binary Search\t\t";
-    
-    
+    cout << "Binary Search\t";
+
+    if (binary_search (a.begin(), a.end(), 96))
+        cout << " Found 96!";
+    else
+        cout << " Did not found 96!";
     
     cout << endl; // space before next e.g
     
