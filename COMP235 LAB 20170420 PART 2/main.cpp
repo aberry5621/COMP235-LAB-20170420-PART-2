@@ -384,19 +384,23 @@ int main()
     
     for_each(a.begin(), a.end(), show<int>);
     
-    
     cout << endl; // space before next e.g
     
     //18.    copy
-    cout << "Copy\t\t";
-    
-    
+    cout << "Copy\t\t\t";
+    vector<int> d(10);
+    copy(a.begin(), a.end(), d.begin());
+    for_each(d.begin(), d.end(), show<int>);
     
     cout << endl; // space before next e.g
     
     //19.    lexicographic_compare
     cout << "Lexicographic Compare\t\t";
     
+    char a1[5] = {'A', 'p', 'p', 'l', 'e'};
+    char b1[6] = {'b', 'a', 'n', 'a', 'n', 'a'};
+
+    cout << "Is a1 < b1?: " << lexicographical_compare(a1,a1+5,b1,b1+6);
     
     
     cout << endl; // space before next e.g
