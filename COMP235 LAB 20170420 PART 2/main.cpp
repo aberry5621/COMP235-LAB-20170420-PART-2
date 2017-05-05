@@ -367,16 +367,22 @@ int main()
     //16.    binary_search
     cout << "Binary Search\t";
 
-    if (binary_search (a.begin(), a.end(), 96))
-        cout << " Found 96!";
+    if (binary_search (a.begin(), a.end(), 95))
+        cout << " Found 95!";
     else
-        cout << " Did not found 96!";
+        cout << " Did not find 95!";
     
     cout << endl; // space before next e.g
     
     //17.    merge
-    cout << "Merge\t\t";
+    cout << "Merge\t\t\t";
+    vector<int> b(5);
+    vector<int> c(5);
+    generate(b.begin(), b.end(), myRandGenerator);
+    generate(c.begin(), c.end(), myRandGenerator);
+    merge(b.begin(),b.begin()+5,c.begin(),c.begin()+5,a.begin());
     
+    for_each(a.begin(), a.end(), show<int>);
     
     
     cout << endl; // space before next e.g
