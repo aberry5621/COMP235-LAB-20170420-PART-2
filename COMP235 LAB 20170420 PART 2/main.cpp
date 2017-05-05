@@ -357,11 +357,42 @@ int main()
     cout << endl; // space before next e.g
     
     //15.    find_if
-    //16.    binary_search
-    //17.    merge
-    //18.    copy
-    //19.    lexicographic_compare
+    cout << "Find If\t\t\t";
     
+    vector<int>::iterator itr15 = find_if(a.begin(), a.end(), [&](int& i) -> bool { return (i % 2 == 0);});
+    cout << " First even value found: " << *itr15;
+    
+    
+    cout << endl; // space before next e.g
+    
+    //16.    binary_search
+    cout << "Binary Search\t\t";
+    
+    
+    
+    cout << endl; // space before next e.g
+    
+    //17.    merge
+    cout << "Merge\t\t";
+    
+    
+    
+    cout << endl; // space before next e.g
+    
+    //18.    copy
+    cout << "Copy\t\t";
+    
+    
+    
+    cout << endl; // space before next e.g
+    
+    //19.    lexicographic_compare
+    cout << "Lexicographic Compare\t\t";
+    
+    
+    
+    cout << endl; // space before next e.g
+
     return 0;
 }
 
